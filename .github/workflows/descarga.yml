@@ -1,6 +1,8 @@
 name: Genera fichero de datos
 on:
   push:
+    branches:
+      - main
   schedule:
     - cron: "2 0 * * *"
 
