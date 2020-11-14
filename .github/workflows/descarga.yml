@@ -1,0 +1,18 @@
+name: Genera fichero de datos
+on: push
+
+jobs:
+  genera_datos:
+    runs-on: ubuntu-latest
+    name: Descarga datos y genera JS
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+      - name: Fechas
+        run: .github/workflows/data.sh
+      - name: Check in
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
