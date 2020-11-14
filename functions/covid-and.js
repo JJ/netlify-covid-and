@@ -20,7 +20,7 @@ exports.handler = async event => {
 
   const when = event.queryStringParameters.when || 'last';
   var result = 0;
-  my week_keys = Object.keys(weeks);
+  var week_keys = Object.keys(weeks);
   if ( when === "last" ) {
     result = weeks[ weeks_keys[ week_keys.length -1 ] ].total;
   } else if ( when in weeks ) {
