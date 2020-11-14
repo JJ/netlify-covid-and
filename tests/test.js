@@ -9,7 +9,11 @@ for ( element in  data.data.data ) {
     weeks[week] = {};
   }
   weeks[week][cod] = data_piece[3].val? Math.round(parseFloat(data_piece[3].val)) : 0;
-
+  if ( "total" in weeks[week] ) {
+    weeks[week]['total'] +=  weeks[week][cod];
+  } else {
+    weeks[week]['total'] =  weeks[week][cod];
+  }
 }
 
 console.log( weeks )
