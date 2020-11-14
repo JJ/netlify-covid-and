@@ -106,3 +106,6 @@ dist
 *~
 # Local Netlify folder
 .netlify
+
+# Downloaded file for tests
+38842
