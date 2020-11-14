@@ -22,7 +22,7 @@ exports.handler = async event => {
   var result = 0;
   var week_keys = Object.keys(weeks);
   if ( when === "last" ) {
-    result = weeks[ weeks_keys[ week_keys.length -1 ] ].total;
+    result = weeks[ week_keys[ week_keys.length -1 ] ].total;
   } else if ( when in weeks ) {
     result = weeks[ when ].total;
   }
