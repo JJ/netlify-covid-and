@@ -1,5 +1,8 @@
 name: Genera fichero de datos
-on: push
+on:
+  push:
+  schedule:
+    - cron: "2 0 * * *"
 
 jobs:
   genera_datos:
