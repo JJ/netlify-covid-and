@@ -7,8 +7,7 @@ exports.handler = async event => {
   return {
 
     statusCode: 200,
-    contentType: 'application/json',
-    body: data,
+    body: JSON.stringify( data ),
 
   }
 
