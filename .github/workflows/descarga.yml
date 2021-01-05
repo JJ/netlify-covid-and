@@ -3,7 +3,7 @@ on:
   push:
   pull_request_target:
   schedule:
-    - cron: "2 0 * * *"
+    - cron: "2 0 * * MON"
 
 jobs:
   genera_datos:
