@@ -10,7 +10,7 @@ exports.handler = async event => {
     if ( !( week in weeks ) ) {
       weeks[week] = {};
     }
-    weeks[week][cod] = data_piece[3].val? Math.round(parseFloat(data_piece[3].val)) : 0;
+    weeks[week][cod] = data_piece[2].val? Math.round(parseFloat(data_piece[2].val)) : 0;
     if ( "total" in weeks[week] ) {
       weeks[week]['total'] +=  weeks[week][cod];
     } else {
