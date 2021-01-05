@@ -1,15 +1,15 @@
 const data = require( "../functions/data" );
 
 var weeks = {};
-for ( element in  data ) {
-  console.log( element, " ", data[element] );
-  const data_piece =  data[element];
+for ( element in  data.data.data ) {
+  const data_piece =  data.data.data[element];
+  console.log( data_piece );
   const week = data_piece[0].des;
   const cod = data_piece[1].cod[0];
   if ( !( week in weeks ) ) {
     weeks[week] = {};
   }
-  weeks[week][cod] = data_piece[3].val? Math.round(parseFloat(data_piece[3].val)) : 0;
+  weeks[week][cod] = data_piece[2].val? Math.round(parseFloat(data_piece[2].val)) : 0;
   if ( "total" in weeks[week] ) {
     weeks[week]['total'] +=  weeks[week][cod];
   } else {

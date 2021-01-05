@@ -509,7 +509,7 @@
   "Granada Nordeste": "77"
 }
 {
-  "Granada (distrito)": "171"
+  "Granada (distrito)": "172"
 }
 {
   "Metropolitano de Granada": "254"
@@ -521,7 +521,7 @@
   "Granada Nordeste": "87"
 }
 {
-  "Granada (distrito)": "270"
+  "Granada (distrito)": "271"
 }
 {
   "Metropolitano de Granada": "395"
@@ -533,20 +533,32 @@
   "Granada Nordeste": "49"
 }
 {
-  "Granada (distrito)": "212"
+  "Granada (distrito)": "214"
 }
 {
   "Metropolitano de Granada": "272"
 }
 {
-  "Granada Sur": "33"
+  "Granada Sur": "36"
 }
 {
-  "Granada Nordeste": "71"
+  "Granada Nordeste": "75"
 }
 {
-  "Granada (distrito)": "275"
+  "Granada (distrito)": "296"
 }
 {
-  "Metropolitano de Granada": "385"
+  "Metropolitano de Granada": "428"
+}
+{
+  "Granada Sur": "9"
+}
+{
+  "Granada Nordeste": "2"
+}
+{
+  "Granada (distrito)": ""
+}
+{
+  "Metropolitano de Granada": "3"
 }
